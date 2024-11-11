@@ -1,7 +1,12 @@
 export default function AppMain() {
+
+    // Stampa nel main una variabile con scritto welcome to my react app
+
+    const body = "Welcome to my react app";
+
     return (
         <main>
-            <p>This is the main.</p>
+            <p>{body}</p>
         </main>
     );
 };
