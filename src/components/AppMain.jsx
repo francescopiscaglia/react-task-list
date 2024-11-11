@@ -24,9 +24,9 @@ export default function AppMain() {
 
                 <div>
                     <ul>
-                        {currentTask.map(data => {
+                        {currentTask.map((data, index) => {
                             return (
-                                <li>
+                                <li key={index}>
                                     <div className="task-header">
                                         <div className="title">
                                             <h5>{data.title}</h5>
@@ -56,9 +56,9 @@ export default function AppMain() {
 
                 <div>
                     <ul>
-                        {completedTask.map(data => {
+                        {completedTask.map((data, index) => {
                             return (
-                                <li>
+                                <li key={index}>
                                     <div className="task-header">
                                         <div className="title">
                                             <h5>{data.title}</h5>
