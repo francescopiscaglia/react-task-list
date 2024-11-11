@@ -59,3 +59,10 @@ main {
         }
     }
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: .75rem;
+}
