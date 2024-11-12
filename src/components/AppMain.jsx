@@ -16,7 +16,7 @@ export default function AppMain() {
         <main>
             {/* <p>{body}</p> */}
 
-            {/* // bonus */}
+            {/* current task */}
             <section className="current-task">
                 <h3>
                     Current task ({currentTask.length})
@@ -26,7 +26,7 @@ export default function AppMain() {
                     <ul>
                         {currentTask.map((data, index) => {
                             return (
-                                <li key={index}>
+                                <li key={data.id}>
                                     <div className="task-header">
                                         <div className="title">
                                             <h5>{data.title}</h5>
@@ -49,6 +49,7 @@ export default function AppMain() {
 
             <hr />
 
+            {/* completed task */}
             <section className="completed-task">
                 <h3>
                     Completed task ({completedTask.length})
@@ -58,7 +59,7 @@ export default function AppMain() {
                     <ul>
                         {completedTask.map((data, index) => {
                             return (
-                                <li key={index}>
+                                <li key={data.id}>
                                     <div className="task-header">
                                         <div className="title">
                                             <h5>{data.title}</h5>
